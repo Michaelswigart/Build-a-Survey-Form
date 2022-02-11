@@ -13,18 +13,65 @@
       <h1 id="title">Form</h1>
       <p id="description">This is a form.</p>
   </header>
+  <!--start of form-->
   <form id="survey-form">
    <div class="form-group">
-    <label id="name-label">
+    <label id="name-label" for="name">
      <input   type="text"
         name="name"
         id="name"
         class="form-control"
         placeholder="Enter your name"
         required required>
-        Please enter Email</label>
+        Please enter your name</label>
    </div>
-
+   <!--start of email-->
+   <div class="form-group">
+    <label id="name-label" for="email">
+     <input   type="text"
+        name="name"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required required>
+        Please enter your email</label>
+   </div>
+   <!-- start of age -->
+   <div class="form-group">
+    <label id="age-label" for="number">
+     <span class="clue"></span>(optional)</label>
+     <input
+     type="number"
+     name="age"
+     id="number-age"
+     min="10"
+     max="140"
+     class="form-control"
+     placeholder="age"
+     />
+   </div>
+   <!-- start of option rols -->
+   <div class="form-group">
+       <p>Which option best describes your current role?</p>
+       <select id="dropdown" name="role" class="form-control" required>
+           <option value="" disabled selected value>select current role</option>
+           <option value="student">student</option>
+           <option value="full-time-employe">full time employe</option>
+           <option value="part-time-employe">part time employe</option>
+           <option value="perfer-not-to-say">perfer not to say</option>
+           <option value="other">other</option>
+       </select>
+   </div>
+   <div class="form-group">
+       <p>Would you recommend coding for free camp</p>
+       <label> 
+       <input
+        type="radio"
+        value="defintely"
+        name="user-recommend"
+        class="input-radio" />Defintely
+    </label>
+   </div>
   </form>
     </div>
 </body>
