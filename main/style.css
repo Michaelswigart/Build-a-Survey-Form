@@ -1,20 +1,71 @@
-.countainer {
-  width: 100%;
-  margin: 3.125rem auto 0 auto;
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    border: 2px solid;
+    border-radius: 1rem;
 }
 
 #title {
     text-align: center;
-    
+    display: inline-block;
+    margin: 0rem 10rem 0rem 27rem;
+    /* figure out padding */
+    font-family: 'Raleway', sans-serif;
+    min-height: 50px;
+    min-width: 50px;
+    border: 1px solid;
+    border-radius: 1rem;
+    overflow: auto;
+    flex-flow: wrap;
 }
 
 #description {
     text-align: center;
+    display: flex;
+    flex-flow: wrap;
+    border: 1px solid;
+    border-radius: .5rem;
 }
 body {
+    /* figure out how to use img */
     background-color: teal;
 }
 
 .survey-form {
+ 
+}
 
+.form-group {
+display:flex;
+flex-flow: wrap;
+border: 1px solid
+
+}
+
+.form-control {
+
+}
+
+.clue {
+
+}
+
+.input-radio {
+
+}
+
+.input-checkbox {
+
+}
+
+.input-textarea {
+
+}
+
+.submit-button {
+display: flex;
+flex-flow: wrap;
+margin: .5rem 10rem .5rem 27rem;
+padding: .5rem .5rem .5rem .5rem;
 }
