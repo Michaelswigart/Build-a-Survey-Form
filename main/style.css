@@ -1,29 +1,41 @@
 
+/* find out what this does */
+
+/* *,
+*::before,
+*::after 
+  box-sizing: border-box;
+ */
 .container {
-    display: flex;
-    flex-flow: wrap;
-    border: 2px solid;
-    border-radius: 1rem;
+    display: grid;
+    /* flex-flow: wrap; */
+    grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 100px, auto;
 }
 
 #title {
     text-align: center;
-    display: inline-block;
+    display: inline-grid;
     margin: 0rem 10rem 0rem 27rem;
     /* figure out padding */
+    padding: 1rem;
     font-family: 'Raleway', sans-serif;
-    min-height: 50px;
+    min-height: 40px;
     min-width: 50px;
     border: 1px solid;
     border-radius: 1rem;
     overflow: auto;
-    flex-flow: wrap;
+    /* flex-flow: wrap; */
+    background-color:lightblue;
+    grid-column-start: 1;
+    grid-column-end: 4;    
 }
 
 #description {
+    margin: 0rem 0rem 0rem 20rem;
+     padding: 0rem 0rem 0rem 0rem;
     text-align: center;
-    display: flex;
-    flex-flow: wrap;
+    /* flex-flow: wrap; */
     border: 1px solid;
     border-radius: .5rem;
 }
@@ -37,18 +49,18 @@ body {
 }
 
 .form-group {
-display:flex;
-flex-flow: wrap;
-border: 1px solid
-
+/* flex-flow: wrap; */
+border: 1px solid;
+margin: 2rem 01rem 3rem 10rem;
+padding: 2rem 2rem 2rem .5rem;
 }
 
 label {
-    /* display:flex; see if it will work the same or better here if removed from form-group */
+    /* display: flex; */
 }
 
 .form-control {
-
+ 
 }
 
 .clue {
@@ -68,10 +80,10 @@ label {
 }
 
 .submit-button {
-display: flex;
-flex-flow: wrap;
+/* display: flex; */
+/* flex-flow: wrap; */
 margin: .5rem 10rem .5rem 27rem;
-padding: .5rem .5rem .5rem .5rem;
+padding: .5rem .5rem .5rem .145rem;
 }
 
 /* need for the body font weight, font size, line height look into *,*::before, *::after see what they do and add the befor to the body to see if that will help look in to background- types  */
