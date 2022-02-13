@@ -43,6 +43,10 @@ border: 1px solid
 
 }
 
+label {
+    /* display:flex; see if it will work the same or better here if removed from form-group */
+}
+
 .form-control {
 
 }
@@ -69,3 +73,5 @@ flex-flow: wrap;
 margin: .5rem 10rem .5rem 27rem;
 padding: .5rem .5rem .5rem .5rem;
 }
+
+/* need for the body font weight, font size, line height look into *,*::before, *::after see what they do and add the befor to the body to see if that will help look in to background- types  */
