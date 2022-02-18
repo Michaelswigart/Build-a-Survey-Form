@@ -17,12 +17,15 @@ a {
     transition: transform 1s
    }
 
+   
 
 
    .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    flex-grow: 2 1 200px;
+    flex-shrink: 2 1 200px;
     }
 
 
@@ -30,10 +33,7 @@ a {
        background-color: teal;
    }
    
-   header {
-    display: flex;
-    
-   }
+
 
    .title {
        display: flex;
@@ -41,8 +41,8 @@ a {
     border-radius: 1%;
     max-width: auto;
     min-width: auto;
-    flex-direction: column;
-    
+    flex-flow: column wrap;
+    text-align: center;
    }
 
    .details {
@@ -58,13 +58,28 @@ a {
 
    .form-box {
     border: .1rem solid;
-    margin: 2rem 1rem 2rem 4rem;
-    padding: 2rem .111rem 2rem .111rem ;
+    margin: 2rem 4rem 2rem 4rem;
+    padding: 2rem 3rem 2rem 5rem ;
     justify-content: space-between;
+    
+   }
+
+   .box-email {
+     margin: .5rem;
+     padding: 3rem;
+     border: .1rem solid;
+     background-color: aquamarine;
+    }
+
+   .box-name {
+     padding: 3rem;
+     margin: .5rem;
+     border: .1rem solid;
+     background-color: aquamarine;
+     
    }
 
    .label-email {
-    background-color: powderblue;
     margin: 1rem 2rem  1rem 2rem;
     padding: 1rem 1rem  1rem 2rem ;
    }
