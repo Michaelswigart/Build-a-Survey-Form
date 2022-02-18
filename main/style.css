@@ -21,27 +21,62 @@ a {
 
    .container {
     display: flex;
-   }
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+
    body {
        background-color: teal;
    }
    
+   header {
+    display: flex;
+    
+   }
+
    .title {
        display: flex;
     border: .1rem solid;
+    border-radius: 1%;
     max-width: auto;
     min-width: auto;
-
+    flex-direction: column;
     
    }
 
    .details {
-       display: flex;
        border: .1rem solid;
+       border-color: steelblue;
+       border-radius: 100%;
+       margin: 1rem 1rem 1rem 1rem;
+       padding: 1rem .5rem 1rem .5rem;
+       background-color: powderblue;
+       color: black;
+       text-align: center;
    }
 
+   .form-box {
+    border: .1rem solid;
+    margin: 2rem 1rem 2rem 4rem;
+    padding: 2rem .111rem 2rem .111rem ;
+    justify-content: space-between;
+   }
 
+   .label-email {
+    background-color: powderblue;
+    margin: 1rem 2rem  1rem 2rem;
+    padding: 1rem 1rem  1rem 2rem ;
+   }
 
+   .label-name {
+     margin: auto;
+   }
 
-
-
+   input [type-text] {
+     width: 100%;
+     padding: 4rem 6rem;
+     margin: 2rem 0;
+     box-sizing: border-box;
+     border-radius: 5%; 
+   }
