@@ -17,20 +17,32 @@ a {
     transition: transform 1s
    }
 
-   
-
+   /* testing to see if this helps and I think it's really helping */
+   html {
+     box-sizing: border-box;
+   }
+   *, *::before, *::after {
+     box-sizing: inherit, border-box;
+     
+   }
 
    .container {
     display: flex;
     flex-direction: row;
     flex-flow: column wrap;
-    flex-grow: 2 1 200px;
-    flex-shrink: 2 1 200px;
+    /* flex-grow: 2 1 200px;
+    flex-shrink: 2 1 200px; */
+     justify-self: center;
+     align-items: center;
+     font-size: large;
+     font-family:'Times New Roman', Times, serif;
     }
 
 
    body {
        background-color: teal;
+       background-image: url();
+       background-image: center;
    }
    
 
@@ -43,6 +55,9 @@ a {
     min-width: auto;
     flex-flow: column wrap;
     text-align: center;
+    display: flex;
+     justify-self: center;
+     align-items: center;
    }
 
    .details {
@@ -54,6 +69,7 @@ a {
        background-color: powderblue;
        color: black;
        text-align: center;
+       
    }
 
    .form-box {
@@ -62,6 +78,7 @@ a {
     padding: 2rem 3rem 2rem 5rem ;
     justify-content: space-between;
     
+    
    }
 
    .box-email {
@@ -69,6 +86,7 @@ a {
      padding: 3rem;
      border: .1rem solid;
      background-color: aquamarine;
+     
     }
 
    .box-name {
@@ -76,16 +94,22 @@ a {
      margin: .5rem;
      border: .1rem solid;
      background-color: aquamarine;
-     
+     display: flex;
+     justify-self: center;
+     align-items: center;
    }
 
    .label-email {
     margin: 1rem 2rem  1rem 2rem;
     padding: 1rem 1rem  1rem 2rem ;
+    
    }
 
    .label-name {
      margin: auto;
+     display: flex;
+     justify-self: center;
+     align-items: center;
    }
 
    input [type-text] {
@@ -94,4 +118,14 @@ a {
      margin: 2rem 0;
      box-sizing: border-box;
      border-radius: 5%; 
+     display: flex;
+     justify-self: center;
+     align-items: center;
+   }
+
+   .submit {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
    }
