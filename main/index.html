@@ -7,31 +7,41 @@
     <link rel="stylesheet" href="style.css">
     <title>Survey form</title>
 </head>
-<body>
-    <header class="title">
-        <title>Form</title>
+    <body>
+        <header class="title">
+
         <h1>Form Survey</h1> 
-        <div class="details"
-    <p>Welcome to our site please enter your Name and Email</p>
-    </header>
+            <div class="details">
+                <p>Welcome to our site please enter your Name and Email</p>
+            </div>
+        </header>
    
-   <div class="container">
-    <form class="form-box">
-        <div class="box-email">
-     <lable class="label-email"><input type="text" id="post" name="email" required/>Please enter your email</lable>
-     </div> 
-     <div class="box-name">
-    <label class="label-name"><input type="text" id="name" name="Name"  required/>Please enter your Name</label>
-    </div>
-    <div class="box-textarea">
-      <label class="textarea"><textarea type="text"></textarea></label>  
-    </div>
-<div >
-<input type="button" value="Submit">
-</div>
-    </form>
-</div>
-</body>
+        <div class="container">
+            <form class="form-box">
+                    <!-- for some reason the email lable is causing an error  -->
+                    <!-- <lable class="label-email"><input type="text" id="post" name="email" required/>Please enter your email</lable> -->
+                          
+                        <div class="box-name">
+    
+                            <label class="label-name"><input type="text" id="name" name="Name"  required/>Please enter your Name</label>
+
+                        </div>
+
+                            <div class="box-textarea">
+
+                                <label><textarea id="textarea"></textarea></label>
+
+                            </div>
+
+                                <div>
+
+                                      <input id="submit" type="button" value="Submit">
+
+                                </div>
+ 
+            </form>
+                        </div>
+                    </body>
 </html>
 
  
