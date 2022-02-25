@@ -18,30 +18,44 @@
    
         <div class="container">
             <form class="form-box">
-                    <!-- for some reason the email lable is causing an error  -->
-                    <!-- <lable class="label-email"><input type="text" id="post" name="email" required/>Please enter your email</lable> -->
-                          
+                <fieldset id="fieldset">
+             
+            
                         <div class="box-name">
     
-                            <label class="label-name"><input type="text" id="name" name="Name"  required/>Please enter your Name</label>
+                            <label class="label-name">Please enter your Name</label>
+                            <input type="text" id="name" name="Name"  required/>
 
                         </div>
+                        <!-- I don't know why but every time I put the email in I get an error |Attribute “name” not allowed on element “label” at this point.
 
+                         Code Extract:
+                         <label name="email" type="text ">Pleas
+                        Attribute “type” not allowed on element “label” at this point.
+
+                        Code Extract:
+                              <label name="email" type="text ">| need to do more research on the  problem.
+
+                             <div class="box-name">
+                            <label for="email" type="text ">Please enter your Email</label>
+                            <input type="text">
+                        </div> -->
+                         
                             <div class="box-textarea">
 
                                 <label><textarea id="textarea"></textarea></label>
 
                             </div>
-
+                </fieldset>
                                 <div>
 
                                       <input id="submit" type="button" value="Submit">
 
                                 </div>
- 
+            
             </form>
                         </div>
                     </body>
 </html>
 
- 
+<!-- It's not what I wanted but it's a work in progress for now I will call this done and come back to this later when I can do this project better than I can now. -->

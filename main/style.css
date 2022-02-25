@@ -84,19 +84,22 @@ a {
     
    }
 
-   /* .box-email {
-    
-     
-    } */
+   #fieldset {
+     border-radius: .5rem;
+     border-color: #04AA6D;
+   }
+   
 
    .box-name {
      padding: 3rem;
      margin: .5rem;
      border: .1rem solid;
+     border-radius: .5rem;
      background-color: aquamarine;
      display: flex;
      justify-self: center;
      align-items: center;
+     
    }
 
    .label-email {
@@ -124,11 +127,14 @@ a {
    }
     
     #textarea {
+      margin-top: .3rem;
       width: 100%;
       height: 150px;
       padding: 12px 20px;
       box-sizing: border-box;
       resize: none;
+      border-radius: .5rem;
+      border: #04AA6D solid;
     }
 
     #submit {
